@@ -1,0 +1,85 @@
+html {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  will-change: transform, opacity;
+}
+
+strong {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+  font-weight: 400;
+}
+
+.site-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.cmdK {
+  cursor: pointer;
+}
+
+.cmdButton {
+  font-size: 9px;
+}
+
+html[data-direction="down"] .site-header {
+  // transform: translate3d(0, -150%, 0);
+  // transition: all 1s ease;
+}
+
+html[data-direction="up"] .site-header {
+  // transform: translate3d(0, 0, 0);
+  // transition: all 1s ease;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.1s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.1s;
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
+}
+
+.scrollContainer {
+  position: absolute;
+  top: 0;
+}
+
+.wlToastContainer {
+  right: 0.5rem !important;
+  bottom: 0.5rem !important;
+  border-radius: 0.5rem !important;
+}
+
+.wlToast {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  line-height: 2 !important;
+  border-radius: 0.5rem !important;
+  box-shadow: none !important;
+  background: #777 !important;
+  color: #111 !important;
+  min-width: 170px !important;
+}
+
+.wlToastAction {
+  font-size: 7px !important;
+  font-weight: 400 !important;
+  color: black !important;
+}
